@@ -52,6 +52,7 @@ Images sent up to the API in a PATCH request should be BASE64 Encoded and sent u
 ### Paths
 I have created a VI that will automatically create a **PATH** for all of the files that will be saved here. As of now, there is 3 paths that are created, one for the BMP file that will be saved, one for the BMP that is modified to work with the lithography program, and a path for the InkScape file. In the future I plan on creating a path for .NID files also.
 **Paths are arranged as follows**
+
 1. There is a folder that is created in the base path according to the date that the path is requested.
 2. In this folder there are 3 subfolders created, One for BMP files, One for the modified BMP files for the lithography, and One for the InkScape files.
 3. Every time you save a BMP file, the program should automatically create a BMP for the lithography and an Inkscape file that is already presized and ready to be used. They will be incremented (zero indexed), and named based on the date.
