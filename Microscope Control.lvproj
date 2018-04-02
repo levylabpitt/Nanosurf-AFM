@@ -12,25 +12,28 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Image" Type="Folder">
-			<Item Name="Change_image_properties.vi" Type="VI" URL="../Change_image_properties.vi"/>
-			<Item Name="Create_blank_svg.vi" Type="VI" URL="../Create_blank_svg.vi"/>
-			<Item Name="Generic file paths.vi" Type="VI" URL="../Generic file paths.vi"/>
+			<Item Name="Change_image_properties.vi" Type="VI" URL="../Images/Change_image_properties.vi"/>
+			<Item Name="Create_blank_svg.vi" Type="VI" URL="../Images/Create_blank_svg.vi"/>
+			<Item Name="Generic file paths.vi" Type="VI" URL="../Images/Generic file paths.vi"/>
+			<Item Name="Save_scan_as_BMP_sub_vi.vi" Type="VI" URL="../Images/Save_scan_as_BMP_sub_vi.vi"/>
 		</Item>
 		<Item Name="NSES2" Type="Folder">
 			<Item Name="Scan Properties.vi" Type="VI" URL="../Scan Properties.vi"/>
-			<Item Name="Save_scan_as_BMP_sub_vi.vi" Type="VI" URL="../Save_scan_as_BMP_sub_vi.vi"/>
 		</Item>
 		<Item Name="OneNote" Type="Folder">
-			<Item Name="Onenote_Auth_handler.vi" Type="VI" URL="../Onenote_Auth_handler.vi"/>
-			<Item Name="onenote_dialogue.vi" Type="VI" URL="../onenote_dialogue.vi"/>
-			<Item Name="BodyBlock.vi" Type="VI" URL="../ONENOTE/BodyBlock.vi"/>
-			<Item Name="HeaderBlock.vi" Type="VI" URL="../ONENOTE/HeaderBlock.vi"/>
-			<Item Name="HTML_BUILDER.vi" Type="VI" URL="../HTML_BUILDER.vi"/>
+			<Item Name="BodyBlock.vi" Type="VI" URL="../OneNote/HTML/BodyBlock.vi"/>
+			<Item Name="HeaderBlock.vi" Type="VI" URL="../OneNote/HTML/HeaderBlock.vi"/>
+			<Item Name="HTML_BUILDER.vi" Type="VI" URL="../OneNote/HTML/HTML_BUILDER.vi"/>
 			<Item Name="One note refresh.vi" Type="VI" URL="../../../OneDriveDocs/Documents/Research/Repository/One Note Utilities/Utilities/One note refresh.vi"/>
-			<Item Name="Check_connection.vi" Type="VI" URL="../Check_connection.vi"/>
+			<Item Name="write_access_codes_to_file.vi" Type="VI" URL="../OneNote/Authorization/write_access_codes_to_file.vi"/>
+			<Item Name="Onenote_Auth_handler.vi" Type="VI" URL="../OneNote/Authorization/Onenote_Auth_handler.vi"/>
+			<Item Name="read_access_codes_from_file.vi" Type="VI" URL="../OneNote/Authorization/read_access_codes_from_file.vi"/>
+			<Item Name="onenote_dialogue.vi" Type="VI" URL="../OneNote/onenote_dialogue.vi"/>
+			<Item Name="Check_connection.vi" Type="VI" URL="../OneNote/Check_connection.vi"/>
 		</Item>
 		<Item Name="Tabs.ctl" Type="VI" URL="../Tabs.ctl"/>
 		<Item Name="Microscope Control.vi" Type="VI" URL="../Microscope Control.vi"/>
+		<Item Name="graph_error_response.vi" Type="VI" URL="../ONENOTE/graph_error_response.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>

@@ -1,0 +1,100 @@
+
+<html>
+  <head>
+    <title>HTML sample block</title>
+    <meta name="created" content="2013-06-11T06:30:00-08:00"/>
+  </head>
+  <body style="font-family:Arial;">
+    <h1>HTML sample block</h1>
+
+    <h2>The basics</h2>
+    <p>For the most part, try to keep the HTML simple, and be 
+      sure to properly close all tags.</p>
+    <p>Character encoding must be in UTF-8; the API doesn't 
+      accept other encodings</p>
+
+    <h2>Overall structure</h2>
+    <p>The normal &lt;html&gt;, &lt;head&gt; and &lt;body&gt; tags are 
+      expected, but the API is usually okay if they aren't included.</p>
+    <p>Inside the &lt;head&gt; tag, we recognize only the &lt;title&gt; and
+      One form of the &lt;meta&gt; tags.</p> 
+    <p>All includes, CSS, script, etc. inside the &lt;head&gt; and &lt;body&gt;
+      blocks are ignored.</p>
+    <p>As you can tell from the &lt;body&gt; tag's style attribute, in this
+      HTML, the API ignores CSS styles</p>
+
+    <h2>Block formatting</h2>
+    <p>Paragraph (&lt;p&gt;) and line-break (&lt;br/&gt;) tags are handled 
+      properly. They get the &quot;Normal&quot; OneNote styling</p>
+    <p>The &lt;div&gt; and &lt;span&gt; tags are recognized but generally 
+      don't have any significant effect, since CSS styling is ignored. A
+      &lt;div&gt; tag acts like a &lt;p&gt; tag.</p>
+    <p>The header tags &lt;h1&gt; through &lt;h6&gt; are recognized, and
+      map to the OneNote Heading 1 through Heading 6 styles.</p>
+
+    <h2>Simple character formatting</h2>
+    <p>This paragraph shows how the API handles <b>HTML4+ bold 
+      &lt;b&gt;</b> tags</p>
+    <p>...and <strong>HTML4+ strong &lt;strong&gt;</strong> tags</p>
+    <p>...and <i>HTML4+ italics &lt;i&gt;</i> and &lt;cite&gt; tags</p>
+    <p>...and <em>HTML4+ emphasis &lt;em&gt;</em> tags</p>
+    <p>...and <u>HTML underline &lt;u&gt;</u> tags</p>
+    <p>...and <strike>HTML strikeout &lt;strike&gt; and &lt;del&gt;</strike> tags</p>
+    <p>...and Super<sup>script</sup> (&lt;sup&gt;) and Sub<sub>script</sub> (&lt;sub&gt;) tags</p>
+    <p style="background-color:#FFBBBB; color:#EEEEFF; font-family:Garamond; font-size:30px">...and styled text</p>
+    <p>...and <a href=".">HTML anchor &lt;a&gt;</a> tags.</p>
+
+    <h2>Images</h2>
+    <p>The &lt;img&gt; tag is supported. The src attribute can be either
+      a URL to an Internet image, or can be a reference to an image provided
+      in the data sent to the OneNote API in the request. For
+      example, here&apos;s a referenced image: </p>
+    <img 
+      src="http://officeimg.vo.msecnd.net/en-us/files/018/949/ZA103278226.png"
+      alt="Everyone loves OneNote!"/>
+    <p>The OneNote API supports JPEG, GIF, TIFF and PNG images</p>
+    <p>This next tag inserts a screenshot thumbnail image of the OneNote.com web
+      page into the captured page, displayed as 500 pixels wide.</p>
+    <img data-render-src="http://www.onenote.com" width="500"/>
+    <h2>Tables</h2>
+    <p>Tables are understood, but not table headers. Table headers are treated
+      like normal rows. You can nest tables, but their content-layout ability
+      is limited. </p>
+    <p>Tables have to be &quot;regular&quot;, in that the API assumes all 
+      rows have same number of columns. Similarly, all columns have the same 
+      number of rows. More specifically, the API ignores colspan and rowspan 
+      attributes.</p>
+    <p>Table border and other styling is ignored, but instead get the default 
+      OneNote table styling, so a simple table like the below will have no
+      visible borders on the notebook page, until the user adds them.</p>
+    <table border="0px">
+      <tr>
+        <td width="20%">First row First column</td>
+        <td width="40%">First row Second column</td>
+      </tr>
+      <tr>
+        <td style="background-color:#EEEEFF">Second row First column in blue</td>
+        <td style="background-color:#EEFFEE">Second row Second column in green</td>
+      </tr>
+    </table>
+    <p>Lists of both types (&lt;ol&gt; and &lt;ul&gt;) are supported, and can
+      be nested. The &quot;type=&quot; attribute is ignored.</p>
+    <ul>
+      <li>First unordered list item</li>
+      <li>Second unordered list item<br>which contains another list
+        <ol>
+          <li>First (nested) ordered list item</li>
+          <li>Second (nested) ordered list item</li>
+        </ol>
+      </li>
+    </ul>
+    <h2>Not (yet) supported</h2>
+    <p>Nested tables are supported, but table header rows (&lt;th&gt;) 
+      are treated like normal table rows (&lt;tr&gt;)</p>
+    <p>CSS styles are ignored at this time.</p>
+    <p>Scripts are ignored.</p>
+    <p>Other tags (for example, &lt;article&gt;, &lt;header&gt;,
+      &lt;footer&gt;, &lt;section&gt; and &lt;aside&gt;) are largely
+      ignored, but their otherwise-valid contents are included.</p>
+  </body>
+</html>
