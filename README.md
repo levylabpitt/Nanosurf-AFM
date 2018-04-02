@@ -55,3 +55,23 @@ I have created a VI that will automatically create a **PATH** for all of the fil
 1. There is a folder that is created in the base path according to the date that the path is requested.
 2. In this folder there are 3 subfolders created, One for BMP files, One for the modified BMP files for the lithography, and One for the InkScape files.
 3. Every time you save a BMP file, the program should automatically create a BMP for the lithography and an Inkscape file that is already presized and ready to be used. They will be incremented (zero indexed), and named based on the date.
+
+---
+
+# Contributing
+Prior to contributing, please contact both the Superuser of the NSES2 and the owner and maintainer of this project (both currently Joseph Albro). This will ensure that the program is less likely to break due to unforeseen changes. 
+
+### Documentation of Code
+
+All changes must be documented. If there is no documentation, changes will not be accepted. When documenting any programs that you create, you should feel like you are over explaining it. What may seem obvious to you may not be as obvious for someone who is not familiar with the program.
+
+### Neatness of Code
+
+If the code is not neat then the changes WILL NOT be accepted. If there is no error handling, then the changes WILL NOT be accepted. Neat code allows for future changes more easily. It also makes the programs more readable. 
+
+Good examples of neat code can be found in nearly any project that JKI publishes.
+
+# Contact Information
+Joseph Albro
+
+Joe.Albro@levylab.org
