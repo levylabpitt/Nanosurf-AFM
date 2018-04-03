@@ -72,6 +72,9 @@ All changes must be documented. If there is no documentation, changes will not b
 If the code is not neat then the changes WILL NOT be accepted. If there is no error handling, then the changes WILL NOT be accepted. Neat code allows for future changes more easily. It also makes the programs more readable. 
 
 Good examples of neat code can be found in nearly any project that JKI publishes.
+# Reporting Issues
+
+To report issues, please make a task on the Asana project for this instrument.
 
 # Contact Information
 Joseph Albro
