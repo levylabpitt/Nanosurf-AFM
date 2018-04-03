@@ -50,6 +50,7 @@ Images sent up to the API in a PATCH request should be BASE64 Encoded and sent u
 ## Files and Paths
 
 ### Paths
+
 I have created a VI that will automatically create a **PATH** for all of the files that will be saved here. As of now, there is 3 paths that are created, one for the BMP file that will be saved, one for the BMP that is modified to work with the lithography program, and a path for the InkScape file. In the future I plan on creating a path for .NID files also.
 
 **Paths are arranged as follows**
@@ -61,11 +62,12 @@ I have created a VI that will automatically create a **PATH** for all of the fil
 ---
 
 # Contributing
+
 Prior to contributing, please contact both the Superuser of the NSES2 and the owner and maintainer of this project (both currently Joseph Albro). This will ensure that the program is less likely to break due to unforeseen changes. 
 
 ### Documentation of Code
 
-All changes must be documented. If there is no documentation, changes will not be accepted. When documenting any programs that you create, you should feel like you are over explaining it. What may seem obvious to you may not be as obvious for someone who is not familiar with the program.
+All changes must be documented. If there is no documentation, changes WILL NOT be accepted. When documenting any programs that you create, you should feel like you are over explaining it. What may seem obvious to you may not be as obvious for someone who is not familiar with the program.
 
 ### Neatness of Code
 
@@ -77,7 +79,9 @@ Good examples of neat code can be found in nearly any project that JKI publishes
 
 # Reporting Issues
 
-To report issues, please make a task on the Asana project for this instrument.
+To report issues, please make a task on the [Asana project](https://app.asana.com/0/39456731334202/list) for this instrument.
+
+---
 
 # Contact Information
 Joseph Albro
