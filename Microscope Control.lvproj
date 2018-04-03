@@ -15,10 +15,10 @@
 			<Item Name="Change_image_properties.vi" Type="VI" URL="../Images/Change_image_properties.vi"/>
 			<Item Name="Create_blank_svg.vi" Type="VI" URL="../Images/Create_blank_svg.vi"/>
 			<Item Name="Generic file paths.vi" Type="VI" URL="../Images/Generic file paths.vi"/>
-			<Item Name="Save_scan_as_BMP_sub_vi.vi" Type="VI" URL="../Images/Save_scan_as_BMP_sub_vi.vi"/>
 		</Item>
 		<Item Name="NSES2" Type="Folder">
 			<Item Name="Scan Properties.vi" Type="VI" URL="../Scan Properties.vi"/>
+			<Item Name="Save_scan_as_BMP_sub_vi.vi" Type="VI" URL="../Images/Save_scan_as_BMP_sub_vi.vi"/>
 		</Item>
 		<Item Name="OneNote" Type="Folder">
 			<Item Name="BodyBlock.vi" Type="VI" URL="../OneNote/HTML/BodyBlock.vi"/>
@@ -33,7 +33,7 @@
 		</Item>
 		<Item Name="Tabs.ctl" Type="VI" URL="../Tabs.ctl"/>
 		<Item Name="Microscope Control.vi" Type="VI" URL="../Microscope Control.vi"/>
-		<Item Name="graph_error_response.vi" Type="VI" URL="../ONENOTE/graph_error_response.vi"/>
+		<Item Name="graph_error_response.vi" Type="VI" URL="../OneNote/graph_error_response.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
