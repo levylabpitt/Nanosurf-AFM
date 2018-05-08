@@ -20,6 +20,7 @@ You will also need to provide the access codes in The Microscope software. This 
 The Microscope control software is by reference, and you must destroy references in the reverse order that you make them. In order to do this, I have found that the simplist way to go about this is to have the **Application Reference** be the *only* reference open in the Main Program. The **Application Reference** is opened at the start of the program, and then closed at the end of the program. All other references, which are derived from this **Application Reference** are to be opened inside of SubVIs and destroyed at the end of the execution of the SubVI. This makes it easier to keep track of what order references were opened and thus what order they need to be closed in. 
 
 ---
+# No longer doing anything involving OneNote in this VI. 
 
 ## OneNote Flow
 
@@ -74,6 +75,10 @@ All changes must be documented. If there is no documentation, changes WILL NOT b
 If the code is not neat then the changes WILL NOT be accepted. If there is no error handling, then the changes WILL NOT be accepted. Neat code allows for future changes more easily. It also makes the programs more readable. 
 
 Good examples of neat code can be found in nearly any project that JKI publishes.
+
+### Naming Convention of Front Panel Objects
+
+This VI will be using a modified Hungarian Notation to name front panel objects. The only difference between the modified that we are using and the actual is instead of camel case for the object we will be using underscore case. Also paths are denoted by a p
 
 ---
 
