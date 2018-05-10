@@ -22,7 +22,12 @@
 			<Item Name="Create_blank_svg.vi" Type="VI" URL="../SubVIs/Other/Create_blank_svg.vi"/>
 			<Item Name="Generic file paths.vi" Type="VI" URL="../SubVIs/Other/Generic file paths.vi"/>
 		</Item>
-		<Item Name="Main_Control_working.vi" Type="VI" URL="../Main_Control_working.vi"/>
+		<Item Name="NSES2_Main.vi" Type="VI" URL="../NSES2_Main.vi"/>
+		<Item Name="Initialize_Lithography.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Initialize_Lithography.vi"/>
+		<Item Name="Queue_Macro.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Queue_Macro.vi"/>
+		<Item Name="Pre_Litho_Queue.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Pre_Litho_Queue.vi"/>
+		<Item Name="Create_Litho_Queue.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Create_Litho_Queue.vi"/>
+		<Item Name="Workspace.ctl" Type="VI" URL="../Type-Defs/Workspace.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
@@ -100,6 +105,8 @@
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Lithography Data.vi" Type="VI" URL="../../../litho folder/Global/Lithography Data.vi"/>
+			<Item Name="Convert to meters.vi" Type="VI" URL="../../nanosurf control/Lithography/SubVIs/Convert to meters.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
