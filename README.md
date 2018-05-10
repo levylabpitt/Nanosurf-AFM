@@ -22,29 +22,29 @@ The Microscope control software is by reference, and you must destroy references
 ---
 # No longer doing anything involving OneNote in this VI. 
 
-## OneNote Flow
+## ~~OneNote Flow~~
 
-### REST APIs
+### ~~REST APIs~~
 
-The OneNote HTTPS API follows the **REST** convention. More information on the basic architecture of REST APIs, from the creators dissertation on the subject can be found [here.](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm) Also a good guide for REST APIs can be found [here.](https://restfulapi.net/)
+~~The OneNote HTTPS API follows the **REST** convention. More information on the basic architecture of REST APIs, from the creators dissertation on the subject can be found [here.](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm) Also a good guide for REST APIs can be found [here.](https://restfulapi.net/)~~
 
-### Authentication Procedure
+### ~~Authentication Procedure~~
 
-I am currently trying handle all of the authentication from a single VI. This lets us have a single state in the JKI state machine which handles all refresh/Access tokens and Authorization Codes. Reading and writing from the files that these are stored is also handled within this subVI. 
+~~I am currently trying handle all of the authentication from a single VI. This lets us have a single state in the JKI state machine which handles all refresh/Access tokens and Authorization Codes. Reading and writing from the files that these are stored is also handled within this subVI. ~~
 
-In the future I am planning on adding a part that will let you get an Authorization code from this VI also, but am currently considering the cases in which this would be needed. (I have encountered this in the past, where I needed to get a new Authorization Code, but cannot currently recall when that would be.)
+~~In the future I am planning on adding a part that will let you get an Authorization code from this VI also, but am currently considering the cases in which this would be needed. (I have encountered this in the past, where I needed to get a new Authorization Code, but cannot currently recall when that would be.)~~
 
-### Creating a New Page
+### ~~Creating a New Page~~
 
-When creating a new page, I will be recording all of the settings of the microscope to OneNote, listed in a table using the HTML tags that are allowed. I plan on also having a method that will allow you to send up another table using a PATCH method if you chose to change your settings. 
+~~When creating a new page, I will be recording all of the settings of the microscope to OneNote, listed in a table using the HTML tags that are allowed. I plan on also having a method that will allow you to send up another table using a PATCH method if you chose to change your settings. ~~
 
-I believe that once you create a page, the resource URL will be send down in the response headers. I will still need to test this, but all developement at this point should assume that there is a way to programmatically get this value back. According to the [OneNote MSDN Documentation on creating pages](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-create-page) the resource URL will be in the ***location*** response header.
+~~I believe that once you create a page, the resource URL will be send down in the response headers. I will still need to test this, but all developement at this point should assume that there is a way to programmatically get this value back. According to the [OneNote MSDN Documentation on creating pages](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-create-page) the resource URL will be in the ***location*** response header.~~
 
-### Adding Content to a Page
+### ~~Adding Content to a Page~~
 
-Once you have created a page, you can then send images with text up to OneNote. I have created a VI (though still in heavy development) that allows users to highlight text and then place the needed tags for formatting around this highlighted text in order to make their lives easiers. This VI also displays the image they are sending up to onenote.
+~~Once you have created a page, you can then send images with text up to OneNote. I have created a VI (though still in heavy development) that allows users to highlight text and then place the needed tags for formatting around this highlighted text in order to make their lives easiers. This VI also displays the image they are sending up to onenote.~~
 
-Images sent up to the API in a PATCH request should be BASE64 Encoded and sent up in the raw HTML as part of the commands section. Placing them in their own block of a multipart request will *not* work.
+~~Images sent up to the API in a PATCH request should be BASE64 Encoded and sent up in the raw HTML as part of the commands section. Placing them in their own block of a multipart request will *not* work.~~
 
 ---
 
@@ -84,7 +84,7 @@ This VI will be using a modified Hungarian Notation to name front panel objects.
 
 # Reporting Issues
 
-To report issues, please make a task on the [Asana project](https://app.asana.com/0/39456731334202/list) for this instrument.
+To report issues, please make a task on the [Asana project](https://app.asana.com/0/39456731334202/list) for this instrument. If the error is completely code related, please also open an issue (located on the side panel).
 
 ---
 
