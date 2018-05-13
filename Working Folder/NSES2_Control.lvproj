@@ -21,20 +21,24 @@
 			<Item Name="Change_image_properties.vi" Type="VI" URL="../SubVIs/Other/Change_image_properties.vi"/>
 			<Item Name="Create_blank_svg.vi" Type="VI" URL="../SubVIs/Other/Create_blank_svg.vi"/>
 			<Item Name="Generic file paths.vi" Type="VI" URL="../SubVIs/Other/Generic file paths.vi"/>
+			<Item Name="User_log_read_write.vi" Type="VI" URL="../SubVIs/Other/User_log_read_write.vi"/>
+		</Item>
+		<Item Name="Lithography" Type="Folder">
+			<Item Name="Initialize_Lithography.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Initialize_Lithography.vi"/>
+			<Item Name="Queue_Macro.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Queue_Macro.vi"/>
+			<Item Name="Pre_Litho_Queue.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Pre_Litho_Queue.vi"/>
+			<Item Name="Create_Litho_Queue.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Create_Litho_Queue.vi"/>
+			<Item Name="Monitor_Lithography_DAQ.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Run_Litho/Monitor_Lithography_DAQ.vi"/>
+			<Item Name="Track_Tip_DAQ.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Run_Litho/Track_Tip_DAQ.vi"/>
+			<Item Name="Coordinate_Average_and_Transform.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Run_Litho/Coordinate_Average_and_Transform.vi"/>
+			<Item Name="Graph_Background_Size.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Run_Litho/Graph_Background_Size.vi"/>
+		</Item>
+		<Item Name="TypeDefs" Type="Folder">
+			<Item Name="Workspace.ctl" Type="VI" URL="../Type-Defs/Workspace.ctl"/>
+			<Item Name="Flat DAQmx Channel.ctl" Type="VI" URL="../Type-Defs/Flat DAQmx Channel.ctl"/>
+			<Item Name="Paths.ctl" Type="VI" URL="../Type-Defs/Paths.ctl"/>
 		</Item>
 		<Item Name="NSES2_Main.vi" Type="VI" URL="../NSES2_Main.vi"/>
-		<Item Name="Initialize_Lithography.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Initialize_Lithography.vi"/>
-		<Item Name="Queue_Macro.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Queue_Macro.vi"/>
-		<Item Name="Pre_Litho_Queue.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Pre_Litho_Queue.vi"/>
-		<Item Name="Create_Litho_Queue.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Create_Litho_Queue.vi"/>
-		<Item Name="Workspace.ctl" Type="VI" URL="../Type-Defs/Workspace.ctl"/>
-		<Item Name="Flat DAQmx Channel.ctl" Type="VI" URL="../Type-Defs/Flat DAQmx Channel.ctl"/>
-		<Item Name="Monitor_Lithography_DAQ.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Run_Litho/Monitor_Lithography_DAQ.vi"/>
-		<Item Name="Track_Tip_DAQ.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Run_Litho/Track_Tip_DAQ.vi"/>
-		<Item Name="Coordinate_Average_and_Transform.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Run_Litho/Coordinate_Average_and_Transform.vi"/>
-		<Item Name="Graph_Background_Size.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Run_Litho/Graph_Background_Size.vi"/>
-		<Item Name="Paths.ctl" Type="VI" URL="../Type-Defs/Paths.ctl"/>
-		<Item Name="User_log_read_write.vi" Type="VI" URL="../SubVIs/Other/User_log_read_write.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
@@ -280,12 +284,12 @@
 			</Item>
 			<Item Name="Lithography Data.vi" Type="VI" URL="../../../litho folder/Global/Lithography Data.vi"/>
 			<Item Name="Convert to meters.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Run_Litho/Convert to meters.vi"/>
-			<Item Name="RGB Image to GrayScale.vi" Type="VI" URL="../../../../../Desktop/Work/Signal IO/SignalIO/RGB Image to GrayScale.vi"/>
+			<Item Name="RGB Image to GrayScale.vi" Type="VI" URL="../SubVIs/Lithography/RGB Image to GrayScale.vi"/>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="segmentgraph.vi" Type="VI" URL="../../../../../Desktop/Work/Signal IO/SignalIO/segmentgraph.vi"/>
+			<Item Name="segmentgraph.vi" Type="VI" URL="../SubVIs/Lithography/segmentgraph.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
