@@ -1,6 +1,1 @@
-User	Time	Begin/End
-Joe	3609020869	Begin
-Joe	3609020869	Begin
-Joe	3609020869	Begin
-Joe	3609020870	Begin
-Joe	3609020870	Begin
+User	Time	Action
