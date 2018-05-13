@@ -33,6 +33,8 @@
 		<Item Name="Track_Tip_DAQ.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Run_Litho/Track_Tip_DAQ.vi"/>
 		<Item Name="Coordinate_Average_and_Transform.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Run_Litho/Coordinate_Average_and_Transform.vi"/>
 		<Item Name="Graph_Background_Size.vi" Type="VI" URL="../SubVIs/Microscope_API/Lithography/Run_Litho/Graph_Background_Size.vi"/>
+		<Item Name="Paths.ctl" Type="VI" URL="../Type-Defs/Paths.ctl"/>
+		<Item Name="User_log_read_write.vi" Type="VI" URL="../SubVIs/Other/User_log_read_write.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
@@ -262,6 +264,7 @@
 				<Item Name="DAQmx Stop Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Stop Task.vi"/>
 				<Item Name="DAQmx Clear Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Clear Task.vi"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
+				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Current VIs Reference__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/appcontrol/appcontrol.llb/Current VIs Reference__ogtk.vi"/>
