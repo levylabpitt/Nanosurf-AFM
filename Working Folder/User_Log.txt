@@ -1,1 +1,2 @@
 User	Time	Action
+Joseph	3609180228	Begin
